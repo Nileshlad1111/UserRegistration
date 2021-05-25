@@ -1,28 +1,50 @@
 package com.bridgelabz;
 
 public class User {
-    //This method is used to validate the First Name
-    public boolean checkFirstName(String firstName) {
-        return (firstName.matches("^[A-Z][a-z]{3,}$"));
+    //variable
+    private String firstName;
+    private String lastName;
+    private String phoneNumber;
+    private String emailId;
+    private String password;
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    //This method is used to validate the Last Name
-    public boolean checkLastName(String lastName) {
-        return (lastName.matches("^[A-Z][a-z]{2,}$"));
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    //  This method is used to validate email Id
-    public boolean checkEmail(String email){
-        return (email.matches("^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*[@][0-9A-Za-z]+([.][a-zA-Z]{2,4})*$"));
+    public String getLastName() {
+        return lastName;
     }
 
-    //This method is used to validate Mobile Number
-    public boolean checkMobileNumber(String mobileNumber){
-        return (mobileNumber.matches("^[0-9]{1,2}[ ][0-9]{10}$"));
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    //this method is used to validate password
-    public boolean checkPassword(String password) {
-        return (password.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[*.!@#$%^&(){}:'<>,.>/~`_+=|].).{8,}$"));
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
