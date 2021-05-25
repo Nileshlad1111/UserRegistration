@@ -10,7 +10,7 @@ public class UserRegistration {
         System.out.println(user.checkLastName("Lad"));
         System.out.println(user.checkEmail("ladnilesh1994@gmail.com"));
         System.out.println(user.checkMobileNumber("91 8888310299"));
-        System.out.println(user.checkPassword("ASDERFasdfg12345"));
+        System.out.println(user.checkPassword("aesrF12345"));
     }
 }
 
