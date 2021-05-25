@@ -70,12 +70,12 @@ public class Validator {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter mobile number");
-        String phoneNumber = scanner.nextLine();
         System.out.println("Enter First Name");
         String firstName = scanner.next();
         System.out.println("Enter Last Name");
         String lastName = scanner.next();
+        System.out.println("Enter mobile number");
+        String phoneNumber = scanner.nextLine();
         System.out.println("Enter email Id");
         String email = scanner.next();
         System.out.println("Enter password");
