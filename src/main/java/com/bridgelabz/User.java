@@ -10,4 +10,10 @@ public class User {
     public boolean checkLastName(String lastName) {
         return (lastName.matches("^[A-Z][a-z]{2,}$"));
     }
+
+    //  This method is used to validate email Id
+    public boolean checkEmail(String email){
+        return (email.matches("^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*[@][0-9A-Za-z]+([.][a-zA-Z]{2,4})*$"));
+    }
+
 }
