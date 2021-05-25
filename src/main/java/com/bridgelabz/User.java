@@ -20,4 +20,9 @@ public class User {
     public boolean checkMobileNumber(String mobileNumber){
         return (mobileNumber.matches("^[0-9]{1,2}[ ][0-9]{10}$"));
     }
+
+    //this method is used to validate password
+    public boolean checkPassword(String password) {
+        return (password.matches("[0-9a-zA-Z]{8,}"));
+    }
 }
