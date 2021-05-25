@@ -23,6 +23,6 @@ public class User {
 
     //this method is used to validate password
     public boolean checkPassword(String password) {
-        return (password.matches("^(?=.*[A-Z])(?=.*[a-z]).{8,}$"));
+        return (password.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$"));
     }
 }
