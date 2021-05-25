@@ -16,4 +16,8 @@ public class User {
         return (email.matches("^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*[@][0-9A-Za-z]+([.][a-zA-Z]{2,4})*$"));
     }
 
+    //This method is used to validate Mobile Number
+    public boolean checkMobileNumber(String mobileNumber){
+        return (mobileNumber.matches("^[0-9]{1,2}[ ][0-9]{10}$"));
+    }
 }
