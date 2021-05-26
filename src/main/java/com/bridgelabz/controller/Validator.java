@@ -1,4 +1,6 @@
-package com.bridgelabz;
+package com.bridgelabz.controller;
+
+import com.bridgelabz.model.User;
 
 import java.util.Scanner;
 
@@ -6,22 +8,22 @@ public class Validator {
 
     //This method is used to validate the First Name
     public boolean checkFirstName(String firstName) {
-        return (firstName.matches("^[A-Z][a-z]{3,}$"));
+        return (firstName.matches("^[A-Z][a-zA-Z]{2,}$"));
     }
 
     //This method is used to validate the Last Name
     public boolean checkLastName(String lastName) {
-        return (lastName.matches("^[A-Z][a-z]{3,}$"));
+        return (lastName.matches("^[a-z ,.'-]+$"));
     }
 
     //  This method is used to validate email Id
     public boolean checkEmail(String email){
-        return (email.matches("^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*[@][0-9A-Za-z]+([.][a-zA-Z]{2,4})*$"));
+        return (email.matches("^[0-9A-Za-z]+([-_+.][0-9A-Za-z]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$"));
     }
 
     //This method is used to validate Mobile Number
     public boolean checkMobileNumber(String mobileNumber){
-        return (mobileNumber.matches("^[0-9]{1,2}[ ][0-9]{10}$"));
+        return (mobileNumber.matches("^(\\+?\\d{1,4}[\\s-])?(?!0+\\s+,?$)\\d{10}\\s*,?$"));
     }
 
     //this method is used to validate password
@@ -75,7 +77,7 @@ public class Validator {
         System.out.println("Enter Last Name");
         String lastName = scanner.next();
         System.out.println("Enter mobile number");
-        String phoneNumber = scanner.nextLine();
+        String phoneNumber = scanner.next();
         System.out.println("Enter email Id");
         String email = scanner.next();
         System.out.println("Enter password");
