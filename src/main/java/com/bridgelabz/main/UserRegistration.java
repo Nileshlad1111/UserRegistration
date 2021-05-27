@@ -1,6 +1,6 @@
 package com.bridgelabz.main;
 
-import com.bridgelabz.controller.Validator;
+import com.bridgelabz.utils.Validator;
 
 public class UserRegistration {
 

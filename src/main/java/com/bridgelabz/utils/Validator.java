@@ -1,4 +1,4 @@
-package com.bridgelabz.controller;
+package com.bridgelabz.utils;
 
 import com.bridgelabz.model.User;
 
@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class Validator {
 
     //This method is used to validate the First Name
-    public boolean checkFirstName(String firstName) {
+    public boolean checkFirstName(String firstName){
         return (firstName.matches("^[A-Z][a-zA-Z]{2,}$"));
     }
 
     //This method is used to validate the Last Name
-    public boolean checkLastName(String lastName) {
+    public boolean checkLastName(String lastName){
         return (lastName.matches("^[a-z ,.'-]+$"));
     }
 
@@ -27,7 +27,7 @@ public class Validator {
     }
 
     //this method is used to validate password
-    public boolean checkPassword(String password) {
+    public boolean checkPassword(String password){
         return (password.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[*.!@#$%^&(){}:'<>,/~`_+=|].).{8,}$"));
     }
 
